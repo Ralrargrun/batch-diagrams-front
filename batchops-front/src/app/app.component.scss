@@ -1,0 +1,62 @@
+::ng-deep .p-menubar {
+    background: #000b39;
+    color: white;
+    border-radius: 0px;
+}
+
+::ng-deep .p-menubar .p-submenu-list {
+    background: #000b39;
+    color: white;
+}
+
+::ng-deep .p-menubar .p-submenu-list .p-menu-separator {
+    border-top: 1px solid #1d2442;
+    margin: 0.25rem 0;
+}
+
+::ng-deep .p-menuitem-icon {
+    color: white !important;
+}
+
+::ng-deep .p-menuitem-link:hover {
+    background-color: #1d2442 !important; /* Cor de fundo ao passar o mouse */
+    color: #ffffff !important; /* Cor do texto ao passar o mouse */
+  }
+
+::ng-deep .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover {
+    background-color: #1d2442 !important; /* Cor de fundo ao passar o mouse */
+    color: #ffffff !important; /* Cor do texto ao passar o mouse */
+}
+
+::ng-deep .p-menuitem-text {
+    color: white !important;
+  }
+
+  ::ng-deep .p-menuitem-link:hover .p-menuitem-icon {
+    color: #ffffff !important; /* Cor do ícone ao passar o mouse */
+  }
+  
+  ::ng-deep .p-menuitem-link:hover .p-menuitem-text {
+    color: #ffffff !important; /* Cor do texto ao passar o mouse */
+  }
+
+  ::ng-deep .p-menuitem {
+    background: #000b39;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ::ng-deep .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background: #1d2442;
+  }
+
+  ::ng-deep ul.custom-menu li {
+    padding: 10px;
+    color: white;
+  }
+  
+  ::ng-deep ul.custom-menu li:hover {
+    background-color: #1d2442; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+  }
