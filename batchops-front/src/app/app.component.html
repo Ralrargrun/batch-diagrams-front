@@ -22,7 +22,7 @@
     </a>
 </div> -->
 
-<p-menubar [model]="items">
+<!-- <p-menubar [model]="items">
   <ng-template pTemplate="start">
 
   </ng-template>
@@ -40,9 +40,9 @@
   <ng-template pTemplate="end">
 
   </ng-template>
-</p-menubar>
+</p-menubar> -->
 
-<p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+<!-- <p-sidebar #sidebarRef [(visible)]="sidebarVisible">
   <ng-template pTemplate="headless">
       <div class="flex flex-column h-full">
           <div class="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
@@ -236,8 +236,46 @@
           </div>
       </div>
   </ng-template>
-</p-sidebar>
+</p-sidebar> -->
 
-<p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+<!-- <p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button> -->
 
-<router-outlet></router-outlet>
+
+
+
+<mat-sidenav-container autosize>
+    <mat-sidenav [opened]="isCollapsed" mode="side">
+      <mat-nav-list>
+
+        <a mat-list-item>
+            <span class="entry">
+               <mat-icon>house</mat-icon>
+               <span>Dashboard</span>
+            </span>
+         </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button mat-icon-button aria-label="Menu icon" (click)="toggleMenu()">
+                <mat-icon>menu</mat-icon>
+            </button>    
+            <!-- <h1>Responsive Material Sidenavigation</h1> -->
+        </mat-toolbar>
+        <h2>Content</h2>
+        
+        <p-card header="Simple Card">
+            <p class="m-0">
+                Lorem ipsum dolor sit amet...
+            </p>
+        </p-card>
+
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+  
+
+<router-outlet>
+
+</router-outlet>
+</mat-sidenav-container>
